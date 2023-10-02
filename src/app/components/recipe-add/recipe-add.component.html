@@ -1,0 +1,18 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Recipe name</mat-label>
+    <input matInput placeholder="Ex. Pizza" value="">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>ingredients</mat-label>
+    <textarea matInput placeholder="Ex. Sugar, Yeast, Milk"></textarea>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Instructions</mat-label>
+    <textarea matInput placeholder="Ex. Cut the fish in half, then boil some water"></textarea>
+  </mat-form-field>
+</form>
+
+<button (click)="submitRecipe()">crea ricetta</button>
