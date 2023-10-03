@@ -20,13 +20,7 @@ export class RecipeAddComponent {
 
   submitRecipe(){
     console.log('ahia');
-    const newRecipe: Recipe = {
-      name: 'Cacio e pepe',
-      createdAt: Date.now(),
-      ingredients: ['pecorino romano', 'pepe', 'spaghetti', 'olio EVO'],
-      description: 'grattare il pecorino pepare il cacio caciare il pepo',
-      url: 'https://www.architettandoincucina.it/wp-content/uploads/2018/11/Cacio-e-pepe-immagine-in-evidenza.png',
-    }
-    this.dataServ.postRecipe(newRecipe).subscribe(addedRecipe => console.log(addedRecipe))
+    // const newRecipe: Recipe = {}
+    // this.dataServ.postRecipe(newRecipe).subscribe(addedRecipe => console.log(addedRecipe))
   }
 }

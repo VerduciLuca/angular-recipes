@@ -5,5 +5,6 @@ export interface Recipe{
   url: string
   createdAt: number
   id?: string
+  category: number
 }
 

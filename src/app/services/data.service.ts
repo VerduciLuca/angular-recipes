@@ -7,6 +7,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class DataService {
+  deleteRecipe(id: string | undefined) {
+    return this.http.delete<Recipe>(this.DB_URL + '/' + id)
+  }
   readonly DB_URL = "https://651a7a98340309952f0d59f5.mockapi.io/recipe"
   constructor(private http:HttpClient) { }
 

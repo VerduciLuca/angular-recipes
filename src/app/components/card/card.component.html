@@ -1,8 +1,9 @@
-<mat-card class="example-card">
+<mat-card class="card">
   <mat-card-header>
     <div mat-card-avatar class="header-image"></div>
     <mat-card-title>{{recipe?.name}}</mat-card-title>
-    <mat-card-subtitle>{{recipe?.createdAt}}</mat-card-subtitle>
+    <!-- <mat-card-subtitle>{{recipe?.createdAt}}</mat-card-subtitle> -->
+    <mat-card-subtitle>{{recipe!.category | categoryToString}}</mat-card-subtitle>
   </mat-card-header>
   <img mat-card-image [src]="recipe?.url" alt="Photo of a {{recipe?.name}}">
   <mat-card-actions>
