@@ -1,3 +1,20 @@
-<div class="list-container">
-<app-card *ngFor="let recipe of recipes" [recipe]="recipe"> </app-card>
+<div class="container">
+
+  <div class="list-container">
+
+    <mat-form-field>
+      <mat-label>Filtra per categoria</mat-label>
+      <mat-select [(value)]="selectedCategory" (valueChange)="categoryChanged()">
+        <mat-option value="-1">
+          tutti
+        </mat-option>
+        <mat-option value="{{el[1]}}" *ngFor="let el of categories">
+          {{el[0]}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <span>{{selectedCategory}}</span>
+
+    <app-card *ngFor="let recipe of recipes" [recipe]="recipe"> </app-card>
+  </div>
 </div>

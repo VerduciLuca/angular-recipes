@@ -14,6 +14,7 @@ export class SuperButtonDirective {
     this.el.nativeElement.style.color='white'
     this.el.nativeElement.style.borderRadius='none'
     this.el.nativeElement.innerHTML='Are you sure?'
+    this.el.nativeElement.style.border='none'
   }
 
   @HostListener('mouseleave') onMouseLeave() {
@@ -21,6 +22,7 @@ export class SuperButtonDirective {
     this.el.nativeElement.style.backgroundColor='white'
     this.el.nativeElement.style.color='purple'
     this.el.nativeElement.style.borderRadius='0.5em'
+    this.el.nativeElement.style.border='1px solid purple'
   }
 
   constructor(private el: ElementRef) {

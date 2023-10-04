@@ -18,4 +18,7 @@ import { RouterModule } from '@angular/router';
 })
 export class HeaderComponent {
 
+  toggleTheme(){
+    document.body.classList.toggle('pippo-dark')
+  }
 }

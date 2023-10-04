@@ -5,6 +5,8 @@ import {MatCardModule} from '@angular/material/card';
 import { RouterModule } from '@angular/router';
 import { Recipe } from "src/app/model/recipe";
 import { CategoryToStringPipe } from "../../pipes/category-to-string.pipe";
+import { MatIconModule } from '@angular/material/icon';
+import { RepeatDirective } from 'src/app/directives/repeat.directive';
 
 
 @Component({
@@ -12,7 +14,7 @@ import { CategoryToStringPipe } from "../../pipes/category-to-string.pipe";
     templateUrl: './card.component.html',
     styleUrls: ['./card.component.scss'],
     standalone: true,
-    imports: [MatCardModule, MatButtonModule, RouterModule, CategoryToStringPipe]
+    imports: [MatCardModule, MatButtonModule, RouterModule, CategoryToStringPipe, MatIconModule, RepeatDirective]
 })
 export class CardComponent {
   @Input() recipe?: Recipe;
